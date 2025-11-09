@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Esse é um projeto que visa demonstrar meus conhecimentos como programador Javascript utilizando as linguagens mais básicas da web!">
+  <title>Mobidash | Visualização de dados</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body class="body-ligth">
+
+  <div class="grid">
+
+  </div>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="header-container">
+          <img src="./public/Logomarca.png" alt="mobidash-logo" class="logomarca">
+          <button id="change-theme">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+        <br>
+        <div class="info-badges">
+          <div class="badge-info">
+            <i class="fa-solid fa-database"></i>
+            <span>Dados salvos no seu dispositivo</span>
+          </div>
+          <div class="badge-warning">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Não adicione informações sensíveis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions-section">
+      <div class="actions-container">
+        <h2 class="section-title">Criar Novo</h2>
+        <div class="actions-grid">
+          <button class="action-card action-card-primary" id="create-chart-btn">
+            <div class="action-card-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="action-card-content">
+              <h3>Criar Gráfico</h3>
+              <p>Visualize dados em gráficos interativos</p>
+            </div>
+            <i class="fa-solid fa-arrow-right action-card-arrow"></i>
+          </button>
+
+          <button class="action-card action-card-primary" id="create-table-btn">
+            <div class="action-card-icon">
+              <i class="fa-solid fa-table"></i>
+            </div>
+            <div class="action-card-content">
+              <h3>Criar Tabela</h3>
+              <p>Organize dados em tabelas estruturadas</p>
+            </div>
+            <i class="fa-solid fa-arrow-right action-card-arrow"></i>
+          </button>
+
+          <div class="action-card action-card-secondary uplaod-button">
+            <input type="file" accept=".json" id="upload-input" />
+            <label for="upload-input">
+              <div class="action-card-icon">
+                <i class="fa-solid fa-upload"></i>
+              </div>
+              <div class="action-card-content">
+                <h3>Upload JSON</h3>
+                <p>Importe gráficos de arquivos JSON</p>
+              </div>
+              <i class="fa-solid fa-arrow-right action-card-arrow"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="add-info-modal"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+    integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="./app/visual/theme.js" type="module"></script>
+  <script src="./app/visual/grid.js"></script>
+  <script src="./app/main.js" type="module"></script>
+</body>
+
+</html>
